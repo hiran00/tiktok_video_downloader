@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>TikTok Video Downloader</h1>
+        <form id="downloadForm">
+            <label for="tiktokUrl">TikTok URL:</label>
+            <input type="text" id="tiktokUrl" name="tiktokUrl" placeholder="Paste TikTok URL here" aria-label="TikTok or Douyin Video URL">
+        </form>
+        <div id="loader" class="loader" style="display:none; margin: 20px auto;"></div>
+        <div id="videoPreview">
+            <!-- Video information will be displayed here -->
+        </div>
+        <div id="downloadOptions">
+            <button id="downloadMp4" aria-label="Download video in MP4 format">Download MP4</button>
+            <button id="downloadMp4NoWatermark" aria-label="Download video in MP4 format without watermark">Download MP4 (No Watermark)</button>
+            <button id="downloadMp3" aria-label="Download audio only in MP3 format">Download MP3 (Audio Only)</button>
+        </div>
+        <div id="downloadStatus" style="margin-top: 15px; text-align: center;" aria-live="polite"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
