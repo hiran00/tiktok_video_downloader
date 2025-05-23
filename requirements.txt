@@ -1,2 +1,18 @@
 Flask
 yt-dlp
+
+The application has been submitted! To run this TikTok Downloader, you would typically follow these steps on your local machine:
+
+Ensure Python and Pip are installed: If not, download and install them from python.org.
+Ensure FFmpeg is installed: yt-dlp relies on FFmpeg for processing video and audio. You can download it from ffmpeg.org and make sure it's added to your system's PATH.
+Clone the repository: Get the code onto your local machine.
+Navigate to the project directory: Open a terminal or command prompt and go into the folder containing the app.py file.
+Create a virtual environment (recommended):
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies:
+pip install -r requirements.txt
+Run the Flask application:
+python app.py
+Open your browser: Go to the address shown in the terminal (usually http://127.0.0.1:5000/).
+This will start the local development server, and you can use the application in your browser. Let me know if you have any other questions!
